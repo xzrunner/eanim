@@ -1,0 +1,5 @@
+eanim/
+projects/*
+
+!projects/eanim.vcxproj
+!projects/eanim.vcxproj.filters

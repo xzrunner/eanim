@@ -1,0 +1,3 @@
+# eanim
+
+Animation editor library.

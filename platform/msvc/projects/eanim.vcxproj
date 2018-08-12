@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\eanim\AnimHelper.h" />
+    <ClInclude Include="..\..\..\include\eanim\Callback.h" />
+    <ClInclude Include="..\..\..\include\eanim\config.h" />
+    <ClInclude Include="..\..\..\include\eanim\MessageID.h" />
+    <ClInclude Include="..\..\..\include\eanim\MsgHelper.h" />
+    <ClInclude Include="..\..\..\include\eanim\TimeStageEdit.h" />
+    <ClInclude Include="..\..\..\include\eanim\WxLayersPanel.h" />
+    <ClInclude Include="..\..\..\include\eanim\WxLayersScrolled.h" />
+    <ClInclude Include="..\..\..\include\eanim\WxLayersToolbar.h" />
+    <ClInclude Include="..\..\..\include\eanim\WxTimelinePanel.h" />
+    <ClInclude Include="..\..\..\include\eanim\WxTimeScaleCtrl.h" />
+    <ClInclude Include="..\..\..\include\eanim\WxTimeStagePanel.h" />
+    <ClInclude Include="..\..\..\include\eanim\WxTimeStageScrolled.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\AnimHelper.cpp" />
+    <ClCompile Include="..\..\..\source\Callback.cpp" />
+    <ClCompile Include="..\..\..\source\MsgHelper.cpp" />
+    <ClCompile Include="..\..\..\source\TimeStageEdit.cpp" />
+    <ClCompile Include="..\..\..\source\WxLayersPanel.cpp" />
+    <ClCompile Include="..\..\..\source\WxLayersScrolled.cpp" />
+    <ClCompile Include="..\..\..\source\WxLayersToolbar.cpp" />
+    <ClCompile Include="..\..\..\source\WxTimelinePanel.cpp" />
+    <ClCompile Include="..\..\..\source\WxTimeScaleCtrl.cpp" />
+    <ClCompile Include="..\..\..\source\WxTimeStagePanel.cpp" />
+    <ClCompile Include="..\..\..\source\WxTimeStageScrolled.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>4.eanim</ProjectName>
+    <ProjectGuid>{14F15BE2-C5CB-4280-9243-3F69574A3D21}</ProjectGuid>
+    <RootNamespace>eanim</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26730.12</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\eanim\x86\Debug\</OutDir>
+    <IntDir>..\eanim\x86\Debug\obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\eanim\x86\Release\</OutDir>
+    <IntDir>..\eanim\x86\Release\obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\cu\src;..\..\..\..\sm\src\sm;..\..\..\..\guard\include;..\..\..\..\node0\include;..\..\..\..\node2\include;..\..\..\..\anim\include;..\..\..\..\painting0\include;..\..\..\..\painting2\include;..\..\..\..\moon\include;..\..\..\..\easyeditor0\include;..\..\..\..\external\boost\include;..\..\..\..\external\lua\include;..\..\..\..\external\rapidjson\include;..\..\..\..\external-editor\wx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\cu\src;..\..\..\..\sm\src\sm;..\..\..\..\guard\include;..\..\..\..\node0\include;..\..\..\..\node2\include;..\..\..\..\anim\include;..\..\..\..\painting0\include;..\..\..\..\painting2\include;..\..\..\..\moon\include;..\..\..\..\easyeditor0\include;..\..\..\..\external\boost\include;..\..\..\..\external\lua\include;..\..\..\..\external\rapidjson\include;..\..\..\..\external-editor\wx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

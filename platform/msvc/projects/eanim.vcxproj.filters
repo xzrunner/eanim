@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="view">
+      <UniqueIdentifier>{a3773673-b50d-454f-934b-eca038f993d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dataset">
+      <UniqueIdentifier>{ba7c9758-502e-480b-8e87-461c1e00eb36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\timeline">
+      <UniqueIdentifier>{8951e03a-7c36-4c69-bbe0-474f7c00ce47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\timeline\left">
+      <UniqueIdentifier>{6f127bbc-5db6-4192-b9e6-12d63cf47646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\timeline\right">
+      <UniqueIdentifier>{7beb123e-a41a-46f0-a6fb-7dab3e99fda0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{444aacc4-f818-4aae-892c-79618e6a753f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\eanim\WxLayersPanel.h">
+      <Filter>view\timeline\left</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\MessageID.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\config.h" />
+    <ClInclude Include="..\..\..\include\eanim\MsgHelper.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\WxLayersScrolled.h">
+      <Filter>view\timeline\left</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\AnimHelper.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\WxLayersToolbar.h">
+      <Filter>view\timeline\left</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\TimeStageEdit.h">
+      <Filter>view\timeline\right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\WxTimeScaleCtrl.h">
+      <Filter>view\timeline\right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\WxTimeStageScrolled.h">
+      <Filter>view\timeline\right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\WxTimeStagePanel.h">
+      <Filter>view\timeline\right</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\WxTimelinePanel.h">
+      <Filter>view\timeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\eanim\Callback.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\WxLayersPanel.cpp">
+      <Filter>view\timeline\left</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\MsgHelper.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\WxLayersScrolled.cpp">
+      <Filter>view\timeline\left</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\AnimHelper.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\WxLayersToolbar.cpp">
+      <Filter>view\timeline\left</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\TimeStageEdit.cpp">
+      <Filter>view\timeline\right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\WxTimeScaleCtrl.cpp">
+      <Filter>view\timeline\right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\WxTimeStageScrolled.cpp">
+      <Filter>view\timeline\right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\WxTimeStagePanel.cpp">
+      <Filter>view\timeline\right</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\WxTimelinePanel.cpp">
+      <Filter>view\timeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Callback.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
