@@ -28,10 +28,10 @@ const int FRAME_END_RECT_HEIGHT     = KEY_FRAME_CIRCLE_RADIUS * 3;
 
 const uint32_t MESSAGES[] =
 {
-	ee0::MSG_INSERT_SCENE_NODE,
-	ee0::MSG_DELETE_SCENE_NODE,
-	ee0::MSG_CLEAR_SCENE_NODE,
-	ee0::MSG_REORDER_SCENE_NODE,
+	ee0::MSG_SCENE_NODE_INSERT,
+	ee0::MSG_SCENE_NODE_DELETE,
+	ee0::MSG_SCENE_NODE_CLEAR,
+	ee0::MSG_SCENE_NODE_UP_DOWN,
 
 	ee0::MSG_UPDATE_NODES,
 
@@ -103,16 +103,16 @@ void WxTimeStagePanel::OnNotify(uint32_t msg, const ee0::VariantSet& variants)
 	bool dirty = false;
 	switch (msg)
 	{
-	case ee0::MSG_INSERT_SCENE_NODE:
+	case ee0::MSG_SCENE_NODE_INSERT:
 		dirty = InsertSceneNode(variants);
 		break;
-	case ee0::MSG_DELETE_SCENE_NODE:
+	case ee0::MSG_SCENE_NODE_DELETE:
 		dirty = DeleteSceneNode(variants);
 		break;
-	case ee0::MSG_CLEAR_SCENE_NODE:
+	case ee0::MSG_SCENE_NODE_CLEAR:
 		dirty = ClearSceneNode();
 		break;
-	case ee0::MSG_REORDER_SCENE_NODE:
+	case ee0::MSG_SCENE_NODE_UP_DOWN:
 		dirty = ReorderSceneNode(variants);
 		break;
 
