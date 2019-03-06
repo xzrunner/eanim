@@ -359,7 +359,7 @@ bool WxTimeStagePanel::InsertSceneNode(const ee0::VariantSet& variants)
 
 	auto var = variants.GetVariant("obj");
 	GD_ASSERT(var.m_type == ee0::VT_PVOID, "no var in vars: obj");
-	ee0::GameObj* obj = static_cast<ee0::GameObj*>(var.m_val.pv);
+    const ee0::GameObj* obj = static_cast<const ee0::GameObj*>(var.m_val.pv);
 	GD_ASSERT(obj, "err scene obj");
 
 	frame->AddNode(*obj);
@@ -381,7 +381,7 @@ bool WxTimeStagePanel::DeleteSceneNode(const ee0::VariantSet& variants)
 
 	auto var = variants.GetVariant("obj");
 	GD_ASSERT(var.m_type == ee0::VT_PVOID, "no var in vars: obj");
-	ee0::GameObj* obj = static_cast<ee0::GameObj*>(var.m_val.pv);
+    const ee0::GameObj* obj = static_cast<const ee0::GameObj*>(var.m_val.pv);
 	GD_ASSERT(obj, "err scene obj");
 
 	bool ret = frame->RemoveNode(*obj);
@@ -410,7 +410,7 @@ bool WxTimeStagePanel::ReorderSceneNode(const ee0::VariantSet& variants)
 
 	auto obj_var = variants.GetVariant("obj");
 	GD_ASSERT(obj_var.m_type == ee0::VT_PVOID, "no var in vars: obj");
-	ee0::GameObj* obj = static_cast<ee0::GameObj*>(obj_var.m_val.pv);
+    const ee0::GameObj* obj = static_cast<const ee0::GameObj*>(obj_var.m_val.pv);
 	GD_ASSERT(obj, "err scene obj");
 
 	auto up_var = variants.GetVariant("up");
